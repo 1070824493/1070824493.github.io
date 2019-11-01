@@ -1,0 +1,744 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css">
+
+
+  <meta name="keywords" content="Hexo, NexT">
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1">
+
+
+
+
+
+
+<meta name="description" content="有了VPS，除了可以满足科学上网的需求，最简单实用的就算弄个小博客了，可以供学习和总结。 本文也是我这个小白自个爬帖总结出来的，适应范围也是同等级的小白。先把效果放在前面：个人博客地址 一、准备条件 VPS 这总得有一个吧，最低配置都行。实在没有的话可以换个组合，网上很多Hexo或者WordPress搭配Github啥的建立博客的，随便一搜都是一大堆，这里就不赘述了。   域名 这个也是硬性基本要">
+<meta property="og:type" content="article">
+<meta property="og:title" content="1小时利用VPS搭配Hexo建立个人博客">
+<meta property="og:url" content="http://yoursite.com/2016/09/24/1小时利用VPS搭配Hexo建立个人博客/index.html">
+<meta property="og:site_name" content="唐义的记录博客">
+<meta property="og:description" content="有了VPS，除了可以满足科学上网的需求，最简单实用的就算弄个小博客了，可以供学习和总结。 本文也是我这个小白自个爬帖总结出来的，适应范围也是同等级的小白。先把效果放在前面：个人博客地址 一、准备条件 VPS 这总得有一个吧，最低配置都行。实在没有的话可以换个组合，网上很多Hexo或者WordPress搭配Github啥的建立博客的，随便一搜都是一大堆，这里就不赘述了。   域名 这个也是硬性基本要">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1723686-0eaccfb22b7762bf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1723686-26491ac684bbf767.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1723686-f4a4ab89b16c84f1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1723686-f96c976d1930c717.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1723686-0c87181cf6a4d844.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1723686-2f68eae2286df49a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2017-03-02T12:53:47.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="1小时利用VPS搭配Hexo建立个人博客">
+<meta name="twitter:description" content="有了VPS，除了可以满足科学上网的需求，最简单实用的就算弄个小博客了，可以供学习和总结。 本文也是我这个小白自个爬帖总结出来的，适应范围也是同等级的小白。先把效果放在前面：个人博客地址 一、准备条件 VPS 这总得有一个吧，最低配置都行。实在没有的话可以换个组合，网上很多Hexo或者WordPress搭配Github啥的建立博客的，随便一搜都是一大堆，这里就不赘述了。   域名 这个也是硬性基本要">
+<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/1723686-0eaccfb22b7762bf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2016/09/24/1小时利用VPS搭配Hexo建立个人博客/">
+
+  <title> 1小时利用VPS搭配Hexo建立个人博客 | 唐义的记录博客 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-84491218-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?208c79f207eabbc2c4a8416bfe23d87a";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">唐义的记录博客</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">一名专注于 iOS 的职业开发者</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                1小时利用VPS搭配Hexo建立个人博客
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-09-24T11:21:59+08:00" content="2016-09-24">
+              2016-09-24
+            </time>
+          </span>
+
+          
+            <span class="post-category">
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/折腾/" itemprop="url" rel="index">
+                    <span itemprop="name">折腾</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/09/24/1小时利用VPS搭配Hexo建立个人博客/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/09/24/1小时利用VPS搭配Hexo建立个人博客/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <script src="/assets/js/APlayer.min.js"> </script><p>有了VPS，除了可以满足科学上网的需求，最简单实用的就算弄个小博客了，可以供学习和总结。</p>
+<p>本文也是我这个小白自个爬帖总结出来的，适应范围也是同等级的小白。先把效果放在前面：<a href="http://tangyi.ml" target="_blank" rel="noopener">个人博客地址</a></p>
+<h4 id="一、准备条件"><a href="#一、准备条件" class="headerlink" title="一、准备条件"></a>一、准备条件</h4><ul>
+<li>VPS<blockquote>
+<p>这总得有一个吧，最低配置都行。实在没有的话可以换个组合，网上很多Hexo或者WordPress搭配Github啥的建立博客的，随便一搜都是一大堆，这里就不赘述了。</p>
+</blockquote>
+</li>
+<li>域名<blockquote>
+<p>这个也是硬性基本要求，不多说。免费的，收费的都行。</p>
+</blockquote>
+</li>
+</ul>
+<h4 id="二、环境要求"><a href="#二、环境要求" class="headerlink" title="二、环境要求"></a>二、环境要求</h4><p>介绍下我的一些安装环境，其他环境没试过，就不打包票了：</p>
+<ul>
+<li>VPS：搬瓦工VPS，要求Centos6操作系统。（其他VPS没试过，无关广告）</li>
+<li>Mac：这个无影响，终端方便而已。</li>
+<li>域名：国外ML免费的域名，同类型还有tk,gq等等结尾的域名。冷门域名一般免费一年。地址：<a href="http://www.freenom.com" target="_blank" rel="noopener">域名注册入口</a></li>
+</ul>
+<h4 id="三、安装一（VPS部分）"><a href="#三、安装一（VPS部分）" class="headerlink" title="三、安装一（VPS部分）"></a>三、安装一（VPS部分）</h4><ul>
+<li><strong>1. 登录VPS</strong></li>
+<li><p><strong>2. 更新一次系统</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum update -y</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>3. 安装软件</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">yum -y install wget;</span><br><span class="line">wget http://download.kanglesoft.com/easypanel/ep.sh -O ep.sh;</span><br><span class="line">sh ep.sh</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<a id="more"></a>
+<blockquote>
+<p>解释一下上面三行命令：<br>第一行是安装wget，用于文件下载，已安装的可以忽略。<br>第二行是从给定地址下载软件，输出保存为ep.sh。安装的软件是kangle，web服务器和反向代理服务器。<br>第三行就是执行了。<br>然后就是静等上面走完。</p>
+</blockquote>
+<ul>
+<li><strong>4. 修改mysql的密码</strong><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysqladmin -u root password 你的密码</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<blockquote>
+<p>数据库目前没用上，评论或者其他高级功能可能会用得上。先把密码改了备份，防以后不时之需。</p>
+</blockquote>
+<ul>
+<li><strong>5. 登录后台管理面板</strong><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://VPS地址:3312/admin/</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<blockquote>
+<p>第一次登录的用户名为admin,密码kangle,登录成功后可在面板里自行修改密码。</p>
+</blockquote>
+<ul>
+<li><p><strong>6. 初始化web服务器</strong><br><img src="http://upload-images.jianshu.io/upload_images/1723686-0eaccfb22b7762bf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="配置web服务器"><br><img src="http://upload-images.jianshu.io/upload_images/1723686-26491ac684bbf767.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="初始化web服务器"></p>
+<blockquote>
+<p>配置下数据库，其他全部默认，第一次初始化服务器三个选项全选，以后再有初始化需求的时候默认会勾选后两个，如上图所示。</p>
+</blockquote>
+</li>
+<li><p><strong>7. 建立网站</strong><br><img src="http://upload-images.jianshu.io/upload_images/1723686-f4a4ab89b16c84f1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="新建网站需要的设置"></p>
+<blockquote>
+<p>网站名和密码用于登录FTP，名字随意。最好能区分你的网站，因为你可以同理建立你的多个子站。</p>
+</blockquote>
+</li>
+<li><p><strong>8. 登录网站</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://VPS地址:3312/vhost</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<blockquote>
+<p>当然这也可以从后台管理面板中网站管理→所有网站进入。帐号密码即第7步设置的帐号密码。</p>
+</blockquote>
+<ul>
+<li><p><strong>9. 绑定域名</strong><br><img src="http://upload-images.jianshu.io/upload_images/1723686-f96c976d1930c717.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="域名绑定"></p>
+<blockquote>
+<p>接下来就是最简单的域名解析了，先进入你购买的域名对应管理页面，一般都有管理dns的，添加A记录到你的VPS地址。然后再回来把你域名添加上，如上图所示。</p>
+</blockquote>
+</li>
+<li><p><strong>10. VPS配置到此为止，剩下的就是将你的静态网页放入wwwroot文件夹。静态网页在接下来的Hexo部分将会生成在你的电脑本地，至于VPS文件和你电脑端网页同步的问题，因为服务器具备FTP功能，可以使用FTP管理工具，我这里推荐Yummy FTP，当然你也可以使用控制面板中的“在线文件”功能在线上传，如果你不觉得每次更新网站都得全部上传覆盖的话。</strong></p>
+</li>
+</ul>
+<h4 id="四、安装二（本地Hexo部分）"><a href="#四、安装二（本地Hexo部分）" class="headerlink" title="四、安装二（本地Hexo部分）"></a>四、安装二（本地Hexo部分）</h4><ul>
+<li><strong>1.安装Node.js</strong>，去<a href="https://nodejs.org" target="_blank" rel="noopener">Node.js官网</a>下载对应系统版本。</li>
+<li><strong>2.安装Git</strong>，安装过Xcode的可以跳过，<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">Git下载地址</a>。</li>
+<li><p><strong>3.安装Hexo</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo npm install -g hexo</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>4.生成静态网页</strong>。在你要存储静态网页的路径下创建文件夹，打开终端cd到这个文件夹，执行如下命令，生成初始静态网页。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>执行完效果应该下图所示：<br><img src="http://upload-images.jianshu.io/upload_images/1723686-0c87181cf6a4d844.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="初始效果图"></p>
+<blockquote>
+<p>常用文件夹说明：<br>①_config.yml：站点配置文件，里面配置你网站名字，网站标题，作者信息，语言，主题等信息。具体如下：<br>Site               ##修改以适应搜索引擎的收录<br>title:       ##定义网站的标题<br>subtitle:            ##定义网站的副标题（不一定会显示）<br>description:         ##定义网站的描述<br>author:            ##定义网站的负责人<br>email:               ##定义网站负责人的电子邮件<br>language:            ##定义网站的语言，默认zh-Hans<br>url:                   ##定义访问的域名<br>root:                  ##定义所在Web文件夹的哪一个目录<br>permalink: :year/:month/:day/:title/      ##定义时间格式<br>source_dir: source           ##定义从哪个文件夹获取博客资料<br>public_dir: public           ##定义生成静态网站到哪个文件夹<br>②source：存放需要发布的文章。默认生成的文件为md格式，支持markdown语法。<br>③themes：里面默认有一个主题，丑得很一般。</p>
+</blockquote>
+<ul>
+<li><p><strong>5.常用命令</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">hexo new 名字 //新建文章，会在source/_posts下生成一个.md文件，不可直接复制生成新文件，否则部署生成会报错。</span><br><span class="line">hexo new page 页面名字 //生成新的页面，比如标签页默认没有，会显示404。</span><br><span class="line">hexo deploy 或 hexo d //部署到localhost，用于本地调试预览。</span><br><span class="line">hexo server 或 hexo s //启动本地预览服务，地址为http://localhost:4000/</span><br><span class="line">hexo generate 或 hexo g //会在你init的文件夹下生成public文件夹，里面包含全套静态网页代码。这里面的全部文件（不包括public文件夹）放入你服务器的wwwroot文件夹里就可以通过域名访问了。</span><br><span class="line">hexo clean //清空缓存，删除配置数据库及public文件夹。</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>6.更换主题</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd themes</span><br><span class="line">git clone 需要下载的主题地址</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p><a href="https://github.com/hexojs/hexo/wiki/Themes" target="_blank" rel="noopener">Hexo官方主题地址</a>在这里，我使用的是next主题，简单好看又容易弄。<br>下载完后修改根目录站点配置文件_config.yml里面的theme: 为主题文件夹的名字来启用主题。注意冒号后有一个空格，注意和themes对应主题文件夹下的_config.yml主题配置文件进行区分~</p>
+<ul>
+<li><p><strong>7.自定义主题</strong>，修改成自己想要的样子。每个主题都有相关的配置文档，比如<a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">Next使用文档</a>，这里特别详细，我也不赘述了。</p>
+</li>
+<li><p><strong>8.更新文章</strong>，只需将public文件夹文件全部同步到VPS的wwwroot文件夹就行了，我用的FTP工具，方法比较笨，没办法，懒。附上我的FTP连接图。登录帐号密码即VPS部分第7步的帐号密码。<br><img src="http://upload-images.jianshu.io/upload_images/1723686-2f68eae2286df49a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="FTP连接图"></p>
+<blockquote>
+<p><strong>开始折腾吧~</strong></p>
+</blockquote>
+</li>
+</ul>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/09/01/女神不仅仅是你的目标，更是得手之后的努力/" rel="next" title="女神不仅仅是你的目标，更是得手之后的努力">
+                <i class="fa fa-chevron-left"></i> 女神不仅仅是你的目标，更是得手之后的努力
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/10/27/1小时利用VPS搭建SVN/" rel="prev" title="1小时利用VPS搭建SVN">
+                1小时利用VPS搭建SVN <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/09/24/1小时利用VPS搭配Hexo建立个人博客/" data-title="1小时利用VPS搭配Hexo建立个人博客" data-url="http://yoursite.com/2016/09/24/1小时利用VPS搭配Hexo建立个人博客/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image" src="/images/avatar.png" alt="唐义">
+          <p class="site-author-name" itemprop="name">唐义</p>
+          <p class="site-description motion-element" itemprop="description">一个喜欢文字的理工男，一个专注编程的程序员。</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">10</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+
+      </section>
+
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#一、准备条件"><span class="nav-number">1.</span> <span class="nav-text">一、准备条件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#二、环境要求"><span class="nav-number">2.</span> <span class="nav-text">二、环境要求</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#三、安装一（VPS部分）"><span class="nav-number">3.</span> <span class="nav-text">三、安装一（VPS部分）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#四、安装二（本地Hexo部分）"><span class="nav-number">4.</span> <span class="nav-text">四、安装二（本地Hexo部分）</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  
+  </aside>
+
+
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">唐义</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"tangyi"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+    <script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
